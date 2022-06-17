@@ -3,23 +3,23 @@
 Python3.9とGPUが利用できるDockerイメージ。
 コンテナ内のユーザー名は`hoge`、パスワードは`fuga`。
 PythonやCUDAのバージョンなどの変更はDockerfileを弄れば可能。
-```
-Pytorch 1.11.0
-CUDA 11.3
-openCV
-scikit-learn
-torchsummary
-jupyterlab
-mlflow
-tensorboard
-seaborn
-einops
-pandas
-matplotlib
-tqdm
-flake8
-autopep8
-```
+
+- Pytorch 1.11.0
+- CUDA 11.3
+- openCV
+- scikit-learn
+- torchsummary
+- jupyterlab
+- mlflow
+- tensorboard
+- seaborn
+- einops
+- pandas
+- matplotlib
+- tqdm
+- flake8
+- autopep8
+
 Dockerに関するシェルスクリプトを`docker/`フォルダにまとめた。
 `Docker`に関するコマンドを記載している。
 拡張子が`.sh`のファイルを実行すれば簡単にDockerを利用できる。

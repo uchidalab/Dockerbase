@@ -3,7 +3,23 @@
 Python3.9とGPUが利用できるDockerイメージ。
 コンテナ内のユーザー名は`hoge`、パスワードは`fuga`。
 PythonやCUDAのバージョンなどの変更はDockerfileを弄れば可能。
-
+```
+Pytorch 1.11.0
+CUDA 11.3
+openCV
+scikit-learn
+torchsummary
+jupyterlab
+mlflow
+tensorboard
+seaborn
+einops
+pandas
+matplotlib
+tqdm
+flake8
+autopep8
+```
 Dockerに関するシェルスクリプトを`docker/`フォルダにまとめた。
 `Docker`に関するコマンドを記載している。
 拡張子が`.sh`のファイルを実行すれば簡単にDockerを利用できる。
@@ -17,7 +33,7 @@ Dockerに関するシェルスクリプトを`docker/`フォルダにまとめ�
 | `./docker/stop.sh` | コンテナを停止させる。 | 実行するコマンド (fish) |
 | `./docker/tensorboard.sh` | コンテナ内でtensorboardを実行する。 | サーバーのポート (6006) |
 | `./docker/mlflow.sh` | コンテナ内でmlflowを実行する。 | サーバーのポート (5000) |
-| `./docker/jupyter.sh` | コンテナ内でjupyter-labを実行する。このまま実行すると、同一LAN内からなら誰でもアクセスできるため**非常にセキュアでない**、実行には注意すること。（パスワードなし。）もしくは、｀--NotebookApp.token=''｀にNotebook アクセス時の token 文字列を設定できる。
+| `./docker/jupyter.sh` | コンテナ内でjupyter-labを実行する。このまま実行すると、同一LAN内からなら誰でもアクセスできるため**非常にセキュアでない**、実行には注意すること。（パスワードなし。）もしくは、`--NotebookApp.token=''`にNotebook アクセス時の token 文字列を設定できる。
 | サーバーのポート (8888) |
 
 `.env`では、日本時間と`workspace`を定義している。
